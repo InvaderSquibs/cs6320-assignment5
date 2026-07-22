@@ -1,0 +1,4 @@
+chunk_position_bucket,n,accuracy,macro_f1,mean_confidence
+early_preview_0_45s,501,0.3613,0.3227,0.3701
+late_preview_90s_plus,334,0.3503,0.3102,0.3756
+mid_preview_45_90s,499,0.3828,0.3459,0.3712

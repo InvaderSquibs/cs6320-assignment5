@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-06-28T18:34:15.587300+00:00",
+  "command": "../assignment_5/run_chroma_lr_range_test.py --run-name exp3_chroma_lr_range",
+  "model": "KeyChromaMLP",
+  "input_dim": 24,
+  "hidden_dim": 64,
+  "part04_reference": "assignment_4/part040-000-training-neural-networks-debugging.pdf p.21",
+  "start_lr": 1e-06,
+  "end_lr": 0.1,
+  "n_steps": 99,
+  "device": "mps",
+  "suggestion": {
+    "suggested_lr": 0.0027464741148160617,
+    "min_loss_lr": 0.07029732115325499,
+    "min_loss": 2.8589212894439697,
+    "steepest_drop_lr": 0.027464741148160617,
+    "reason": "Use range test as candidate generator (Part 04 p.19). Suggested starting point \u2248 2.75e-03 (order of magnitude below steepest-drop region ~2.75e-02)."
+  },
+  "csv": "/Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/lr_range_tests/exp3_chroma_lr_range/exp3_chroma_lr_range_lr_range.csv",
+  "plot": "/Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/lr_range_tests/exp3_chroma_lr_range/exp3_chroma_lr_range_lr_range.png"
+}

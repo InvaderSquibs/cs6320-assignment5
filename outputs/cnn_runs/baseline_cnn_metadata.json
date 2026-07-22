@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-06-28T13:50:35.501349+00:00",
+  "command": "../assignment_5/train_key_cnn.py --run-name baseline_cnn --batch-log-interval 20",
+  "run_name": "baseline_cnn",
+  "clip_sec": 15,
+  "epochs_requested": 30,
+  "epochs_ran": 10,
+  "batch_size": 16,
+  "batch_log_interval": 20,
+  "eval_log_interval": 0,
+  "dropout": 0.0,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "patience": 8,
+  "seed": 42,
+  "device": "mps",
+  "device_detection": {
+    "cuda_available": false,
+    "mps_available": true
+  },
+  "device_preference": "auto",
+  "input": {
+    "sample_rate": 44100,
+    "channels": 2,
+    "samples_per_channel": 661500,
+    "tensor_shape": [
+      2,
+      661500
+    ]
+  },
+  "n_train": 6285,
+  "n_val": 1350,
+  "n_test": 1334,
+  "n_classes": 24,
+  "best_val_loss": 3.183096591164084,
+  "test_loss": 3.2258604623022533,
+  "test_accuracy": 0.022488755622188907,
+  "test_macro_f1": 0.010178362440897567,
+  "history_csv": "/Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/cnn_runs/baseline_cnn_history.csv",
+  "training_log": "/Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/cnn_runs/baseline_cnn.log",
+  "total_elapsed_sec": 5480.0
+}

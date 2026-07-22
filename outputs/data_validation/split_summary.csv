@@ -1,0 +1,4 @@
+split,n_chunks,n_segments,n_tracks,n_keys
+train,6285,800,789,24
+val,1350,171,170,24
+test,1334,171,170,24

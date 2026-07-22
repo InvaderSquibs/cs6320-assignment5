@@ -1,0 +1,44 @@
+{
+  "clip_sec": 15,
+  "n_songs": 1122,
+  "n_chunks": 8976,
+  "split_ratios_config": "70/15/15 song-level, stratified by key_24, seed 42",
+  "song_counts": [
+    {
+      "split": "train",
+      "rows": 785,
+      "percent": 69.96434937611407
+    },
+    {
+      "split": "val",
+      "rows": 168,
+      "percent": 14.973262032085561
+    },
+    {
+      "split": "test",
+      "rows": 169,
+      "percent": 15.062388591800357
+    }
+  ],
+  "chunk_counts": [
+    {
+      "split": "train",
+      "rows": 6280,
+      "percent": 69.96434937611407
+    },
+    {
+      "split": "val",
+      "rows": 1344,
+      "percent": 14.973262032085561
+    },
+    {
+      "split": "test",
+      "rows": 1352,
+      "percent": 15.062388591800357
+    }
+  ],
+  "leakage_song_passed": true,
+  "leakage_chunk_passed": true,
+  "unseen_key24_in_val": 0,
+  "unseen_key24_in_test": 0
+}

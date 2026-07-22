@@ -1,0 +1,9 @@
+# Run on CHPC after syncing code + chroma cache (see assignment_5/CHPC.md)
+
+cd ~/cs6320/assignment_5
+export BEATPORT_DATA_MODE=chroma_only
+sbatch run.slurm
+
+# Monitor:
+#   squeue -u $USER
+#   tail -f slurm-a5-chroma-<jobid>.out

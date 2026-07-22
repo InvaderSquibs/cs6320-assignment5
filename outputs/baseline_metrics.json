@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "generated_at": "2026-06-23T20:33:34.377286+00:00",
+    "command": "cd beatport && python ../assignment_5/run_key_evaluation.py --clip-sec 15",
+    "clip_sec": 15,
+    "model": "Key24Classifier (logistic regression, class_weight=balanced)",
+    "model_C": 1.0,
+    "random_seed": 42,
+    "key_segments_enabled": true,
+    "n_chunks_total": 8976,
+    "features_cached": 8976,
+    "features_reextract_required": false
+  },
+  "metrics": [
+    {
+      "split": "train",
+      "n_chunks": 6289,
+      "n_segments": 800,
+      "key24_accuracy": 0.4809895833333333,
+      "key24_macro_f1": 0.4684010372194017,
+      "key24_pitch_distance": 1.0136746700588328,
+      "segment_accuracy": 0.55875,
+      "mode_accuracy": 0.6737395833333334,
+      "pitch_accuracy": 0.6044583333333333
+    },
+    {
+      "split": "val",
+      "n_chunks": 1352,
+      "n_segments": 171,
+      "key24_accuracy": 0.40545808966861596,
+      "key24_macro_f1": 0.36080380497024606,
+      "key24_pitch_distance": 1.051775147928994,
+      "segment_accuracy": 0.4619883040935672,
+      "mode_accuracy": 0.6050194931773879,
+      "pitch_accuracy": 0.564327485380117
+    },
+    {
+      "split": "test",
+      "n_chunks": 1335,
+      "n_segments": 171,
+      "key24_accuracy": 0.34624756335282647,
+      "key24_macro_f1": 0.3132269147842042,
+      "key24_pitch_distance": 1.2419475655430712,
+      "segment_accuracy": 0.4093567251461988,
+      "mode_accuracy": 0.5857212475633529,
+      "pitch_accuracy": 0.5260721247563352
+    }
+  ],
+  "diagnosis": {
+    "pattern": "plausible_generalization",
+    "train_val_accuracy_gap": 0.07553149366471734,
+    "train_val_macro_f1_gap": 0.10759723224915563,
+    "val_test_accuracy_gap": 0.05921052631578949,
+    "findings": [
+      "Train (48.1%) and validation (40.5%) are within ~7.6% accuracy.",
+      "Macro F1 gap train\u2212val is 10.8% (rarer keys may be overfit).",
+      "See split_audit/*_key_share_curves.png: parallel train/val/test lines mean stratification worked; diverging keys explain macro-F1 gaps."
+    ],
+    "intervention_hint": "Next levers: longer clips, richer features, or per-key error analysis."
+  }
+}

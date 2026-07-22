@@ -1,0 +1,287 @@
+Run 'exp2_lr_tuned' starting — loading data...
+Training log file: /Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/cnn_runs/exp2_lr_tuned.log
+Loaded 8969 chunks with cached waveforms from /Users/zach.walton/Dev/shule/cs6320/beatport/datasets/clip_15s/waveforms/key
+=== Device detection ===
+  CUDA available: False
+  MPS (Apple Metal GPU) available: True
+  Selected device: mps
+Device=mps  batch_size=16  train=6285 (393 batches/epoch)  val=1350 (85 batches)  test=1334  classes=24  batch_log_interval=20  eval_log_interval=0
+Training for up to 30 epochs (patience=8)
+Epoch 1/30 — training (393 batches)
+  [train] epoch 1/30  batch 1/393 (0%)  loss=3.2011  elapsed=3.7s
+  [train] epoch 1/30  batch 20/393 (5%)  loss=3.1772  elapsed=22.8s
+  [train] epoch 1/30  batch 40/393 (10%)  loss=3.2531  elapsed=42.8s
+  [train] epoch 1/30  batch 60/393 (15%)  loss=3.0677  elapsed=63.1s
+  [train] epoch 1/30  batch 80/393 (20%)  loss=3.1009  elapsed=83.8s
+  [train] epoch 1/30  batch 100/393 (25%)  loss=3.1085  elapsed=104.7s
+  [train] epoch 1/30  batch 120/393 (31%)  loss=3.0499  elapsed=125.4s
+  [train] epoch 1/30  batch 140/393 (36%)  loss=3.0607  elapsed=145.9s
+  [train] epoch 1/30  batch 160/393 (41%)  loss=3.3861  elapsed=166.2s
+  [train] epoch 1/30  batch 180/393 (46%)  loss=3.1625  elapsed=186.3s
+  [train] epoch 1/30  batch 200/393 (51%)  loss=3.3328  elapsed=206.3s
+  [train] epoch 1/30  batch 220/393 (56%)  loss=3.2278  elapsed=226.4s
+  [train] epoch 1/30  batch 240/393 (61%)  loss=3.2430  elapsed=246.7s
+  [train] epoch 1/30  batch 260/393 (66%)  loss=3.2847  elapsed=266.8s
+  [train] epoch 1/30  batch 280/393 (71%)  loss=3.0258  elapsed=287.0s
+  [train] epoch 1/30  batch 300/393 (76%)  loss=3.1930  elapsed=307.1s
+  [train] epoch 1/30  batch 320/393 (81%)  loss=3.1306  elapsed=327.2s
+  [train] epoch 1/30  batch 340/393 (87%)  loss=3.1342  elapsed=347.4s
+  [train] epoch 1/30  batch 360/393 (92%)  loss=3.1234  elapsed=367.5s
+  [train] epoch 1/30  batch 380/393 (97%)  loss=3.1579  elapsed=387.6s
+  [train] epoch 1/30  batch 393/393 (100%)  loss=3.2048  elapsed=400.5s
+Epoch 1/30 — train done  mean_loss=3.1979  elapsed=410.5s
+Epoch 1/30 — train  loss=3.1706  acc=0.048  macro_f1=0.014  elapsed=101.2s
+Epoch 1/30 — evaluating val (85 batches)
+Epoch 1/30 — val  loss=3.2162  acc=0.041  macro_f1=0.009  elapsed=32.1s
+=== Epoch 1/30 summary ===  train_loss=3.1706  val_loss=3.2162  train_acc=0.048  val_acc=0.041  val_f1=0.009  best_val=yes  no_improve=0/8
+Epoch 2/30 — training (393 batches)
+  [train] epoch 2/30  batch 1/393 (0%)  loss=3.1987  elapsed=3.8s
+  [train] epoch 2/30  batch 20/393 (5%)  loss=3.2225  elapsed=22.9s
+  [train] epoch 2/30  batch 40/393 (10%)  loss=3.2186  elapsed=43.0s
+  [train] epoch 2/30  batch 60/393 (15%)  loss=3.1473  elapsed=63.1s
+  [train] epoch 2/30  batch 80/393 (20%)  loss=3.1530  elapsed=83.3s
+  [train] epoch 2/30  batch 100/393 (25%)  loss=3.3083  elapsed=103.4s
+  [train] epoch 2/30  batch 120/393 (31%)  loss=3.2440  elapsed=123.5s
+  [train] epoch 2/30  batch 140/393 (36%)  loss=3.1605  elapsed=143.6s
+  [train] epoch 2/30  batch 160/393 (41%)  loss=3.1565  elapsed=163.8s
+  [train] epoch 2/30  batch 180/393 (46%)  loss=3.0725  elapsed=184.0s
+  [train] epoch 2/30  batch 200/393 (51%)  loss=3.0504  elapsed=204.2s
+  [train] epoch 2/30  batch 220/393 (56%)  loss=3.1447  elapsed=224.4s
+  [train] epoch 2/30  batch 240/393 (61%)  loss=3.1942  elapsed=244.5s
+  [train] epoch 2/30  batch 260/393 (66%)  loss=3.0597  elapsed=264.7s
+  [train] epoch 2/30  batch 280/393 (71%)  loss=3.1975  elapsed=284.8s
+  [train] epoch 2/30  batch 300/393 (76%)  loss=3.1550  elapsed=305.0s
+  [train] epoch 2/30  batch 320/393 (81%)  loss=3.2313  elapsed=325.1s
+  [train] epoch 2/30  batch 340/393 (87%)  loss=3.2612  elapsed=345.3s
+  [train] epoch 2/30  batch 360/393 (92%)  loss=3.2840  elapsed=365.4s
+  [train] epoch 2/30  batch 380/393 (97%)  loss=3.1671  elapsed=385.6s
+  [train] epoch 2/30  batch 393/393 (100%)  loss=3.1254  elapsed=398.5s
+Epoch 2/30 — train done  mean_loss=3.1638  elapsed=408.5s
+Epoch 2/30 — train  loss=3.1354  acc=0.062  macro_f1=0.026  elapsed=101.8s
+Epoch 2/30 — evaluating val (85 batches)
+Epoch 2/30 — val  loss=3.1832  acc=0.082  macro_f1=0.031  elapsed=32.1s
+=== Epoch 2/30 summary ===  train_loss=3.1354  val_loss=3.1832  train_acc=0.062  val_acc=0.082  val_f1=0.031  best_val=yes  no_improve=0/8
+Epoch 3/30 — training (393 batches)
+  [train] epoch 3/30  batch 1/393 (0%)  loss=3.2035  elapsed=4.0s
+  [train] epoch 3/30  batch 20/393 (5%)  loss=3.1357  elapsed=23.1s
+  [train] epoch 3/30  batch 40/393 (10%)  loss=3.1199  elapsed=43.2s
+  [train] epoch 3/30  batch 60/393 (15%)  loss=3.2708  elapsed=63.4s
+  [train] epoch 3/30  batch 80/393 (20%)  loss=3.2434  elapsed=83.4s
+  [train] epoch 3/30  batch 100/393 (25%)  loss=3.0705  elapsed=103.6s
+  [train] epoch 3/30  batch 120/393 (31%)  loss=3.0778  elapsed=123.7s
+  [train] epoch 3/30  batch 140/393 (36%)  loss=3.2315  elapsed=143.8s
+  [train] epoch 3/30  batch 160/393 (41%)  loss=3.1177  elapsed=164.1s
+  [train] epoch 3/30  batch 180/393 (46%)  loss=3.1345  elapsed=184.3s
+  [train] epoch 3/30  batch 200/393 (51%)  loss=3.0902  elapsed=204.4s
+  [train] epoch 3/30  batch 220/393 (56%)  loss=3.1415  elapsed=224.6s
+  [train] epoch 3/30  batch 240/393 (61%)  loss=3.1221  elapsed=244.8s
+  [train] epoch 3/30  batch 260/393 (66%)  loss=3.2402  elapsed=265.2s
+  [train] epoch 3/30  batch 280/393 (71%)  loss=3.0310  elapsed=285.3s
+  [train] epoch 3/30  batch 300/393 (76%)  loss=3.0102  elapsed=305.5s
+  [train] epoch 3/30  batch 320/393 (81%)  loss=3.1810  elapsed=325.6s
+  [train] epoch 3/30  batch 340/393 (87%)  loss=3.0813  elapsed=345.8s
+  [train] epoch 3/30  batch 360/393 (92%)  loss=3.0532  elapsed=366.0s
+  [train] epoch 3/30  batch 380/393 (97%)  loss=3.1842  elapsed=386.2s
+  [train] epoch 3/30  batch 393/393 (100%)  loss=3.2632  elapsed=399.1s
+Epoch 3/30 — train done  mean_loss=3.1496  elapsed=409.1s
+Epoch 3/30 — train  loss=3.1203  acc=0.058  macro_f1=0.039  elapsed=101.6s
+Epoch 3/30 — evaluating val (85 batches)
+Epoch 3/30 — val  loss=3.2133  acc=0.039  macro_f1=0.029  elapsed=32.1s
+=== Epoch 3/30 summary ===  train_loss=3.1203  val_loss=3.2133  train_acc=0.058  val_acc=0.039  val_f1=0.029  best_val=no  no_improve=1/8
+Epoch 4/30 — training (393 batches)
+  [train] epoch 4/30  batch 1/393 (0%)  loss=3.1131  elapsed=4.1s
+  [train] epoch 4/30  batch 20/393 (5%)  loss=3.2058  elapsed=23.2s
+  [train] epoch 4/30  batch 40/393 (10%)  loss=3.0959  elapsed=43.3s
+  [train] epoch 4/30  batch 60/393 (15%)  loss=3.0429  elapsed=63.4s
+  [train] epoch 4/30  batch 80/393 (20%)  loss=3.1666  elapsed=83.5s
+  [train] epoch 4/30  batch 100/393 (25%)  loss=3.1449  elapsed=103.6s
+  [train] epoch 4/30  batch 120/393 (31%)  loss=3.1808  elapsed=123.8s
+  [train] epoch 4/30  batch 140/393 (36%)  loss=3.1010  elapsed=143.9s
+  [train] epoch 4/30  batch 160/393 (41%)  loss=3.1891  elapsed=164.1s
+  [train] epoch 4/30  batch 180/393 (46%)  loss=3.1692  elapsed=184.2s
+  [train] epoch 4/30  batch 200/393 (51%)  loss=3.0094  elapsed=204.4s
+  [train] epoch 4/30  batch 220/393 (56%)  loss=3.1825  elapsed=224.5s
+  [train] epoch 4/30  batch 240/393 (61%)  loss=3.0574  elapsed=244.7s
+  [train] epoch 4/30  batch 260/393 (66%)  loss=3.0030  elapsed=264.9s
+  [train] epoch 4/30  batch 280/393 (71%)  loss=3.2803  elapsed=285.0s
+  [train] epoch 4/30  batch 300/393 (76%)  loss=3.1698  elapsed=305.2s
+  [train] epoch 4/30  batch 320/393 (81%)  loss=3.4600  elapsed=325.5s
+  [train] epoch 4/30  batch 340/393 (87%)  loss=3.0504  elapsed=345.8s
+  [train] epoch 4/30  batch 360/393 (92%)  loss=3.0184  elapsed=365.9s
+  [train] epoch 4/30  batch 380/393 (97%)  loss=2.9481  elapsed=386.0s
+  [train] epoch 4/30  batch 393/393 (100%)  loss=3.2272  elapsed=399.0s
+Epoch 4/30 — train done  mean_loss=3.1433  elapsed=409.0s
+Epoch 4/30 — train  loss=3.1270  acc=0.060  macro_f1=0.037  elapsed=101.7s
+Epoch 4/30 — evaluating val (85 batches)
+Epoch 4/30 — val  loss=3.2597  acc=0.057  macro_f1=0.036  elapsed=32.2s
+=== Epoch 4/30 summary ===  train_loss=3.1270  val_loss=3.2597  train_acc=0.060  val_acc=0.057  val_f1=0.036  best_val=no  no_improve=2/8
+Epoch 5/30 — training (393 batches)
+  [train] epoch 5/30  batch 1/393 (0%)  loss=3.1952  elapsed=4.0s
+  [train] epoch 5/30  batch 20/393 (5%)  loss=3.0529  elapsed=23.2s
+  [train] epoch 5/30  batch 40/393 (10%)  loss=3.0047  elapsed=43.3s
+  [train] epoch 5/30  batch 60/393 (15%)  loss=3.1592  elapsed=63.4s
+  [train] epoch 5/30  batch 80/393 (20%)  loss=3.1055  elapsed=83.6s
+  [train] epoch 5/30  batch 100/393 (25%)  loss=3.0876  elapsed=103.7s
+  [train] epoch 5/30  batch 120/393 (31%)  loss=3.1761  elapsed=123.8s
+  [train] epoch 5/30  batch 140/393 (36%)  loss=3.1270  elapsed=143.9s
+  [train] epoch 5/30  batch 160/393 (41%)  loss=3.2386  elapsed=164.1s
+  [train] epoch 5/30  batch 180/393 (46%)  loss=3.1719  elapsed=184.2s
+  [train] epoch 5/30  batch 200/393 (51%)  loss=3.0560  elapsed=204.4s
+  [train] epoch 5/30  batch 220/393 (56%)  loss=3.1313  elapsed=224.5s
+  [train] epoch 5/30  batch 240/393 (61%)  loss=3.2520  elapsed=244.7s
+  [train] epoch 5/30  batch 260/393 (66%)  loss=2.9633  elapsed=264.9s
+  [train] epoch 5/30  batch 280/393 (71%)  loss=3.0474  elapsed=285.3s
+  [train] epoch 5/30  batch 300/393 (76%)  loss=3.0944  elapsed=305.5s
+  [train] epoch 5/30  batch 320/393 (81%)  loss=3.3427  elapsed=325.7s
+  [train] epoch 5/30  batch 340/393 (87%)  loss=3.1264  elapsed=345.9s
+  [train] epoch 5/30  batch 360/393 (92%)  loss=3.2659  elapsed=366.1s
+  [train] epoch 5/30  batch 380/393 (97%)  loss=3.2114  elapsed=386.3s
+  [train] epoch 5/30  batch 393/393 (100%)  loss=3.0561  elapsed=399.3s
+Epoch 5/30 — train done  mean_loss=3.1304  elapsed=409.3s
+Epoch 5/30 — train  loss=3.1089  acc=0.078  macro_f1=0.047  elapsed=102.0s
+Epoch 5/30 — evaluating val (85 batches)
+Epoch 5/30 — val  loss=3.1872  acc=0.069  macro_f1=0.041  elapsed=32.1s
+=== Epoch 5/30 summary ===  train_loss=3.1089  val_loss=3.1872  train_acc=0.078  val_acc=0.069  val_f1=0.041  best_val=no  no_improve=3/8
+Epoch 6/30 — training (393 batches)
+  [train] epoch 6/30  batch 1/393 (0%)  loss=3.2038  elapsed=4.0s
+  [train] epoch 6/30  batch 20/393 (5%)  loss=2.9530  elapsed=23.1s
+  [train] epoch 6/30  batch 40/393 (10%)  loss=3.3736  elapsed=43.2s
+  [train] epoch 6/30  batch 60/393 (15%)  loss=3.0094  elapsed=63.3s
+  [train] epoch 6/30  batch 80/393 (20%)  loss=3.1361  elapsed=83.5s
+  [train] epoch 6/30  batch 100/393 (25%)  loss=3.1849  elapsed=103.6s
+  [train] epoch 6/30  batch 120/393 (31%)  loss=3.0799  elapsed=123.7s
+  [train] epoch 6/30  batch 140/393 (36%)  loss=3.0420  elapsed=143.9s
+  [train] epoch 6/30  batch 160/393 (41%)  loss=3.3162  elapsed=164.0s
+  [train] epoch 6/30  batch 180/393 (46%)  loss=3.1194  elapsed=184.2s
+  [train] epoch 6/30  batch 200/393 (51%)  loss=3.1069  elapsed=204.6s
+  [train] epoch 6/30  batch 220/393 (56%)  loss=3.0918  elapsed=224.8s
+  [train] epoch 6/30  batch 240/393 (61%)  loss=3.0416  elapsed=245.0s
+  [train] epoch 6/30  batch 260/393 (66%)  loss=2.9900  elapsed=265.2s
+  [train] epoch 6/30  batch 280/393 (71%)  loss=3.1709  elapsed=285.5s
+  [train] epoch 6/30  batch 300/393 (76%)  loss=3.2362  elapsed=305.7s
+  [train] epoch 6/30  batch 320/393 (81%)  loss=3.2463  elapsed=325.9s
+  [train] epoch 6/30  batch 340/393 (87%)  loss=3.0155  elapsed=346.1s
+  [train] epoch 6/30  batch 360/393 (92%)  loss=3.2173  elapsed=366.3s
+  [train] epoch 6/30  batch 380/393 (97%)  loss=3.1574  elapsed=386.5s
+  [train] epoch 6/30  batch 393/393 (100%)  loss=2.9889  elapsed=399.5s
+Epoch 6/30 — train done  mean_loss=3.1232  elapsed=409.5s
+Epoch 6/30 — train  loss=3.1015  acc=0.059  macro_f1=0.042  elapsed=101.7s
+Epoch 6/30 — evaluating val (85 batches)
+Epoch 6/30 — val  loss=3.1943  acc=0.047  macro_f1=0.030  elapsed=32.1s
+=== Epoch 6/30 summary ===  train_loss=3.1015  val_loss=3.1943  train_acc=0.059  val_acc=0.047  val_f1=0.030  best_val=no  no_improve=4/8
+Epoch 7/30 — training (393 batches)
+  [train] epoch 7/30  batch 1/393 (0%)  loss=3.1142  elapsed=4.1s
+  [train] epoch 7/30  batch 20/393 (5%)  loss=3.0058  elapsed=23.2s
+  [train] epoch 7/30  batch 40/393 (10%)  loss=3.1006  elapsed=43.3s
+  [train] epoch 7/30  batch 60/393 (15%)  loss=3.1297  elapsed=63.4s
+  [train] epoch 7/30  batch 80/393 (20%)  loss=3.0830  elapsed=83.5s
+  [train] epoch 7/30  batch 100/393 (25%)  loss=3.0400  elapsed=103.6s
+  [train] epoch 7/30  batch 120/393 (31%)  loss=3.1288  elapsed=123.8s
+  [train] epoch 7/30  batch 140/393 (36%)  loss=3.0255  elapsed=143.9s
+  [train] epoch 7/30  batch 160/393 (41%)  loss=3.3596  elapsed=164.0s
+  [train] epoch 7/30  batch 180/393 (46%)  loss=3.2391  elapsed=184.2s
+  [train] epoch 7/30  batch 200/393 (51%)  loss=3.1515  elapsed=204.4s
+  [train] epoch 7/30  batch 220/393 (56%)  loss=3.3089  elapsed=224.6s
+  [train] epoch 7/30  batch 240/393 (61%)  loss=3.1607  elapsed=244.8s
+  [train] epoch 7/30  batch 260/393 (66%)  loss=3.1473  elapsed=265.0s
+  [train] epoch 7/30  batch 280/393 (71%)  loss=3.0534  elapsed=285.3s
+  [train] epoch 7/30  batch 300/393 (76%)  loss=3.2998  elapsed=305.7s
+  [train] epoch 7/30  batch 320/393 (81%)  loss=3.3401  elapsed=326.0s
+  [train] epoch 7/30  batch 340/393 (87%)  loss=3.1855  elapsed=346.2s
+  [train] epoch 7/30  batch 360/393 (92%)  loss=2.9596  elapsed=366.4s
+  [train] epoch 7/30  batch 380/393 (97%)  loss=3.2414  elapsed=386.7s
+  [train] epoch 7/30  batch 393/393 (100%)  loss=3.1995  elapsed=399.6s
+Epoch 7/30 — train done  mean_loss=3.1099  elapsed=409.6s
+Epoch 7/30 — train  loss=3.0739  acc=0.080  macro_f1=0.056  elapsed=101.6s
+Epoch 7/30 — evaluating val (85 batches)
+Epoch 7/30 — val  loss=3.1869  acc=0.080  macro_f1=0.049  elapsed=32.1s
+=== Epoch 7/30 summary ===  train_loss=3.0739  val_loss=3.1869  train_acc=0.080  val_acc=0.080  val_f1=0.049  best_val=no  no_improve=5/8
+Epoch 8/30 — training (393 batches)
+  [train] epoch 8/30  batch 1/393 (0%)  loss=3.2188  elapsed=4.0s
+  [train] epoch 8/30  batch 20/393 (5%)  loss=3.0420  elapsed=23.1s
+  [train] epoch 8/30  batch 40/393 (10%)  loss=3.2177  elapsed=43.2s
+  [train] epoch 8/30  batch 60/393 (15%)  loss=3.0670  elapsed=63.3s
+  [train] epoch 8/30  batch 80/393 (20%)  loss=3.0761  elapsed=83.4s
+  [train] epoch 8/30  batch 100/393 (25%)  loss=3.2486  elapsed=103.6s
+  [train] epoch 8/30  batch 120/393 (31%)  loss=2.8782  elapsed=123.7s
+  [train] epoch 8/30  batch 140/393 (36%)  loss=3.0740  elapsed=143.8s
+  [train] epoch 8/30  batch 160/393 (41%)  loss=2.9765  elapsed=164.0s
+  [train] epoch 8/30  batch 180/393 (46%)  loss=3.2359  elapsed=184.2s
+  [train] epoch 8/30  batch 200/393 (51%)  loss=3.0176  elapsed=204.3s
+  [train] epoch 8/30  batch 220/393 (56%)  loss=3.3567  elapsed=224.5s
+  [train] epoch 8/30  batch 240/393 (61%)  loss=3.1610  elapsed=244.7s
+  [train] epoch 8/30  batch 260/393 (66%)  loss=3.0358  elapsed=264.9s
+  [train] epoch 8/30  batch 280/393 (71%)  loss=2.9231  elapsed=285.0s
+  [train] epoch 8/30  batch 300/393 (76%)  loss=3.1305  elapsed=305.3s
+  [train] epoch 8/30  batch 320/393 (81%)  loss=2.9467  elapsed=325.5s
+  [train] epoch 8/30  batch 340/393 (87%)  loss=3.2707  elapsed=345.7s
+  [train] epoch 8/30  batch 360/393 (92%)  loss=2.9147  elapsed=365.9s
+  [train] epoch 8/30  batch 380/393 (97%)  loss=3.0710  elapsed=386.1s
+  [train] epoch 8/30  batch 393/393 (100%)  loss=3.0648  elapsed=399.3s
+Epoch 8/30 — train done  mean_loss=3.0985  elapsed=409.3s
+Epoch 8/30 — train  loss=3.1057  acc=0.072  macro_f1=0.046  elapsed=101.7s
+Epoch 8/30 — evaluating val (85 batches)
+Epoch 8/30 — val  loss=3.2369  acc=0.061  macro_f1=0.030  elapsed=32.1s
+=== Epoch 8/30 summary ===  train_loss=3.1057  val_loss=3.2369  train_acc=0.072  val_acc=0.061  val_f1=0.030  best_val=no  no_improve=6/8
+Epoch 9/30 — training (393 batches)
+  [train] epoch 9/30  batch 1/393 (0%)  loss=2.8219  elapsed=4.0s
+  [train] epoch 9/30  batch 20/393 (5%)  loss=3.1503  elapsed=23.1s
+  [train] epoch 9/30  batch 40/393 (10%)  loss=3.2525  elapsed=43.2s
+  [train] epoch 9/30  batch 60/393 (15%)  loss=2.8721  elapsed=63.3s
+  [train] epoch 9/30  batch 80/393 (20%)  loss=3.1575  elapsed=83.5s
+  [train] epoch 9/30  batch 100/393 (25%)  loss=2.9360  elapsed=103.6s
+  [train] epoch 9/30  batch 120/393 (31%)  loss=3.0907  elapsed=123.8s
+  [train] epoch 9/30  batch 140/393 (36%)  loss=2.9069  elapsed=144.0s
+  [train] epoch 9/30  batch 160/393 (41%)  loss=3.2468  elapsed=164.4s
+  [train] epoch 9/30  batch 180/393 (46%)  loss=2.8216  elapsed=184.8s
+  [train] epoch 9/30  batch 200/393 (51%)  loss=2.9198  elapsed=205.0s
+  [train] epoch 9/30  batch 220/393 (56%)  loss=3.1349  elapsed=225.2s
+  [train] epoch 9/30  batch 240/393 (61%)  loss=3.1495  elapsed=245.3s
+  [train] epoch 9/30  batch 260/393 (66%)  loss=3.2001  elapsed=265.6s
+  [train] epoch 9/30  batch 280/393 (71%)  loss=3.0965  elapsed=285.8s
+  [train] epoch 9/30  batch 300/393 (76%)  loss=3.1052  elapsed=306.0s
+  [train] epoch 9/30  batch 320/393 (81%)  loss=3.0894  elapsed=326.2s
+  [train] epoch 9/30  batch 340/393 (87%)  loss=2.9375  elapsed=346.5s
+  [train] epoch 9/30  batch 360/393 (92%)  loss=3.1113  elapsed=366.7s
+  [train] epoch 9/30  batch 380/393 (97%)  loss=3.0134  elapsed=386.9s
+  [train] epoch 9/30  batch 393/393 (100%)  loss=3.2878  elapsed=399.9s
+Epoch 9/30 — train done  mean_loss=3.0783  elapsed=409.9s
+Epoch 9/30 — train  loss=3.0610  acc=0.062  macro_f1=0.045  elapsed=101.9s
+Epoch 9/30 — evaluating val (85 batches)
+Epoch 9/30 — val  loss=3.2406  acc=0.060  macro_f1=0.045  elapsed=32.1s
+=== Epoch 9/30 summary ===  train_loss=3.0610  val_loss=3.2406  train_acc=0.062  val_acc=0.060  val_f1=0.045  best_val=no  no_improve=7/8
+Epoch 10/30 — training (393 batches)
+  [train] epoch 10/30  batch 1/393 (0%)  loss=2.9260  elapsed=4.0s
+  [train] epoch 10/30  batch 20/393 (5%)  loss=2.9583  elapsed=23.1s
+  [train] epoch 10/30  batch 40/393 (10%)  loss=2.8220  elapsed=43.3s
+  [train] epoch 10/30  batch 60/393 (15%)  loss=3.0862  elapsed=63.5s
+  [train] epoch 10/30  batch 80/393 (20%)  loss=3.0278  elapsed=83.6s
+  [train] epoch 10/30  batch 100/393 (25%)  loss=2.9582  elapsed=103.7s
+  [train] epoch 10/30  batch 120/393 (31%)  loss=3.2461  elapsed=123.9s
+  [train] epoch 10/30  batch 140/393 (36%)  loss=3.1145  elapsed=144.0s
+  [train] epoch 10/30  batch 160/393 (41%)  loss=3.3452  elapsed=164.2s
+  [train] epoch 10/30  batch 180/393 (46%)  loss=3.1898  elapsed=184.4s
+  [train] epoch 10/30  batch 200/393 (51%)  loss=3.0637  elapsed=204.6s
+  [train] epoch 10/30  batch 220/393 (56%)  loss=3.0610  elapsed=224.8s
+  [train] epoch 10/30  batch 240/393 (61%)  loss=3.1945  elapsed=245.0s
+  [train] epoch 10/30  batch 260/393 (66%)  loss=3.1412  elapsed=265.2s
+  [train] epoch 10/30  batch 280/393 (71%)  loss=3.0134  elapsed=285.4s
+  [train] epoch 10/30  batch 300/393 (76%)  loss=3.0044  elapsed=305.7s
+  [train] epoch 10/30  batch 320/393 (81%)  loss=3.0711  elapsed=325.9s
+  [train] epoch 10/30  batch 340/393 (87%)  loss=3.1586  elapsed=346.1s
+  [train] epoch 10/30  batch 360/393 (92%)  loss=3.1927  elapsed=366.3s
+  [train] epoch 10/30  batch 380/393 (97%)  loss=2.9344  elapsed=386.5s
+  [train] epoch 10/30  batch 393/393 (100%)  loss=3.0179  elapsed=399.4s
+Epoch 10/30 — train done  mean_loss=3.0694  elapsed=409.4s
+Epoch 10/30 — train  loss=3.0395  acc=0.073  macro_f1=0.054  elapsed=101.8s
+Epoch 10/30 — evaluating val (85 batches)
+Epoch 10/30 — val  loss=3.2060  acc=0.060  macro_f1=0.046  elapsed=32.1s
+=== Epoch 10/30 summary ===  train_loss=3.0395  val_loss=3.2060  train_acc=0.073  val_acc=0.060  val_f1=0.046  best_val=no  no_improve=8/8
+Early stopping at epoch 10
+Evaluating test split with best val checkpoint...
+Epoch 30/30 — evaluating test (84 batches)
+Epoch 30/30 — test  loss=3.2100  acc=0.039  macro_f1=0.015  elapsed=31.8s
+Wrote /Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/cnn_runs/exp2_lr_tuned_history.csv
+Wrote /Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/cnn_runs/exp2_lr_tuned_metadata.json
+Wrote /Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/cnn_runs/exp2_lr_tuned.log
+Done in 5464.2s — test acc=0.039 macro_f1=0.015 loss=3.210

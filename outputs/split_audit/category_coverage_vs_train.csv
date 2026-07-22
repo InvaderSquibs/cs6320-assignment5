@@ -1,0 +1,7 @@
+column,split,train_unique_values,split_unique_values,unseen_values_count,unseen_values_sample,unseen_row_count,unseen_row_percent
+key_24,val,24,24,0,,0,0.0
+key_24,test,24,24,0,,0,0.0
+mode,val,2,2,0,,0,0.0
+mode,test,2,2,0,,0,0.0
+pitch_class,val,12,12,0,,0,0.0
+pitch_class,test,12,12,0,,0,0.0

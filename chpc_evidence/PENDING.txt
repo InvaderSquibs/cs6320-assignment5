@@ -1,0 +1,14 @@
+Replace after CHPC run:
+
+- slurm-a5-chroma-<jobid>.out
+- slurm-a5-chroma-<jobid>.err (if non-empty)
+- exp3_chroma_baseline_metadata.json (copied automatically by run.slurm)
+
+Laptop prep:
+  bash assignment_5/scripts/sync_chpc_code.sh
+  bash assignment_5/scripts/sync_chpc_chroma.sh
+
+CHPC submit (see chpc_evidence/sbatch_command.txt):
+  cd ~/cs6320/assignment_5
+  export BEATPORT_DATA_MODE=chroma_only
+  sbatch run.slurm

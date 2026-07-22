@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "generated_at": "2026-06-23T20:40:54.265991+00:00",
+    "command": "cd beatport && python ../assignment_5/run_validation_curve.py --clip-sec 15",
+    "clip_sec": 15,
+    "max_iter": 2000,
+    "baseline_C": 1.0,
+    "c_values": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1.0,
+      3.0,
+      10.0
+    ],
+    "note": "Lower C = stronger L2 regularization. For 24 key classes with segment-level labels and class imbalance, macro F1 curves matter as much as accuracy."
+  },
+  "intervention_candidate": {
+    "baseline_C": 1.0,
+    "baseline_val_accuracy": 0.40545808966861596,
+    "baseline_train_val_gap": 0.07553149366471734,
+    "baseline_val_macro_f1": 0.36080380497024606,
+    "recommended_C": 0.1,
+    "recommended_val_accuracy": 0.38718323586744635,
+    "recommended_val_macro_f1": 0.345955165938778,
+    "recommended_train_val_gap": 0.06422301413255366,
+    "reason": "C=0.1 cuts train\u2212val accuracy gap to 6.4% (baseline 7.6%) while keeping val accuracy 38.7% and val macro F1 0.346 near baseline (40.5%, F1 0.361)."
+  },
+  "history": [
+    {
+      "setting_idx": 0,
+      "C": 0.01,
+      "log10_C": -2.0,
+      "is_baseline": false,
+      "train_key24_accuracy": 0.36224999999999996,
+      "val_key24_accuracy": 0.3001949317738791,
+      "train_key24_macro_f1": 0.3520599438696918,
+      "val_key24_macro_f1": 0.2762413210897395,
+      "train_segment_accuracy": 0.4075,
+      "val_segment_accuracy": 0.3391812865497076,
+      "train_val_accuracy_gap": 0.062055068226120835,
+      "train_val_macro_f1_gap": 0.07581862277995233
+    },
+    {
+      "setting_idx": 1,
+      "C": 0.03,
+      "log10_C": -1.5228787452803376,
+      "is_baseline": false,
+      "train_key24_accuracy": 0.4104270833333334,
+      "val_key24_accuracy": 0.3469785575048733,
+      "train_key24_macro_f1": 0.39846980052682834,
+      "val_key24_macro_f1": 0.31213685924448575,
+      "train_segment_accuracy": 0.48,
+      "val_segment_accuracy": 0.391812865497076,
+      "train_val_accuracy_gap": 0.06344852582846011,
+      "train_val_macro_f1_gap": 0.08633294128234259
+    },
+    {
+      "setting_idx": 2,
+      "C": 0.1,
+      "log10_C": -1.0,
+      "is_baseline": false,
+      "train_key24_accuracy": 0.45140625,
+      "val_key24_accuracy": 0.38718323586744635,
+      "train_key24_macro_f1": 0.43863980295135335,
+      "val_key24_macro_f1": 0.345955165938778,
+      "train_segment_accuracy": 0.5275,
+      "val_segment_accuracy": 0.4502923976608187,
+      "train_val_accuracy_gap": 0.06422301413255366,
+      "train_val_macro_f1_gap": 0.09268463701257534
+    },
+    {
+      "setting_idx": 3,
+      "C": 0.3,
+      "log10_C": -0.5228787452803376,
+      "is_baseline": false,
+      "train_key24_accuracy": 0.47109375,
+      "val_key24_accuracy": 0.39741715399610134,
+      "train_key24_macro_f1": 0.4576757264564837,
+      "val_key24_macro_f1": 0.35453914487183824,
+      "train_segment_accuracy": 0.55,
+      "val_segment_accuracy": 0.47953216374269003,
+      "train_val_accuracy_gap": 0.07367659600389864,
+      "train_val_macro_f1_gap": 0.10313658158464545
+    },
+    {
+      "setting_idx": 4,
+      "C": 1.0,
+      "log10_C": 0.0,
+      "is_baseline": true,
+      "train_key24_accuracy": 0.4809895833333333,
+      "val_key24_accuracy": 0.40545808966861596,
+      "train_key24_macro_f1": 0.4684010372194017,
+      "val_key24_macro_f1": 0.36080380497024606,
+      "train_segment_accuracy": 0.55875,
+      "val_segment_accuracy": 0.4619883040935672,
+      "train_val_accuracy_gap": 0.07553149366471734,
+      "train_val_macro_f1_gap": 0.10759723224915563
+    },
+    {
+      "setting_idx": 5,
+      "C": 3.0,
+      "log10_C": 0.47712125471966244,
+      "is_baseline": false,
+      "train_key24_accuracy": 0.4855208333333333,
+      "val_key24_accuracy": 0.4069200779727095,
+      "train_key24_macro_f1": 0.4735063819836047,
+      "val_key24_macro_f1": 0.36192569524710333,
+      "train_segment_accuracy": 0.565,
+      "val_segment_accuracy": 0.4619883040935672,
+      "train_val_accuracy_gap": 0.07860075536062378,
+      "train_val_macro_f1_gap": 0.11158068673650134
+    },
+    {
+      "setting_idx": 6,
+      "C": 10.0,
+      "log10_C": 1.0,
+      "is_baseline": false,
+      "train_key24_accuracy": 0.48514583333333333,
+      "val_key24_accuracy": 0.4032651072124756,
+      "train_key24_macro_f1": 0.4731093251063125,
+      "val_key24_macro_f1": 0.3604943140662568,
+      "train_segment_accuracy": 0.56,
+      "val_segment_accuracy": 0.47368421052631576,
+      "train_val_accuracy_gap": 0.08188072612085773,
+      "train_val_macro_f1_gap": 0.11261501104005567
+    }
+  ]
+}

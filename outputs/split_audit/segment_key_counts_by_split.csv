@@ -1,0 +1,25 @@
+key_24,train,val,test,total
+C minor,78,16,17,111
+F minor,70,15,15,100
+E minor,56,12,12,80
+D minor,49,10,11,70
+C# minor,48,10,10,68
+G minor,48,10,10,68
+A minor,41,9,9,59
+B minor,41,8,9,58
+F# minor,31,7,7,45
+D major,31,6,7,44
+A# minor,30,6,7,43
+D# minor,30,6,7,43
+C# major,29,6,6,41
+G# major,26,6,5,37
+G# minor,25,5,6,36
+F# major,24,5,6,35
+G major,22,5,5,32
+A# major,22,5,4,31
+E major,19,4,4,27
+D# major,17,4,3,24
+F major,17,4,3,24
+B major,16,4,3,23
+C major,15,4,3,22
+A major,15,4,3,22

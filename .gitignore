@@ -1,0 +1,23 @@
+# Assignment 5 — local / repo ignores
+
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+
+# Model weights (not for GitHub or Canvas zip)
+*.pt
+*.pth
+
+# Bulky local-only artifacts
+outputs/waveform_listen/
+outputs/data_validation/spectrograms/
+outputs/mlp_runs/
+
+# Build staging (keep dist/*.zip)
+dist/staging/
+
+# Optional CHPC logs (not required)
+slurm-*.out
+slurm-*.err

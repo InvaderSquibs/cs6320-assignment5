@@ -1,0 +1,10 @@
+split,track_id,chunk_idx,start_sec,end_sec,key_24,segment_id,audio_path,audio_exists
+train,5057312,7,105.0,120.0,G# minor,5057312_k0,/Users/zach.walton/Dev/shule/cs6320/datasets/beatport EDM Key Dataset/audio/5057312 Distances - Boring Chuck (Original Mix).mp3,True
+train,298850,5,75.0,90.0,F minor,298850_k0,/Users/zach.walton/Dev/shule/cs6320/datasets/beatport EDM Key Dataset/audio/298850 Roman Rai - Cosmic Drunk Funk (Original Mix).mp3,True
+train,3831323,5,75.0,90.0,G# major,3831323_k0,"/Users/zach.walton/Dev/shule/cs6320/datasets/beatport EDM Key Dataset/audio/3831323 Terry Dexter, Sir D - Celebration (Original Mix).mp3",True
+val,503690,4,60.0,75.0,D minor,503690_k0,"/Users/zach.walton/Dev/shule/cs6320/datasets/beatport EDM Key Dataset/audio/503690 Subb-an, Matt Mancini - Italia Subculture (Subb-an Re-Edit).mp3",True
+val,326117,1,15.0,30.0,F# minor,326117_k0,/Users/zach.walton/Dev/shule/cs6320/datasets/beatport EDM Key Dataset/audio/326117 Velvet Girl - Velvet (Vocal Trance Mix).mp3,True
+val,297335,6,90.0,105.0,F# major,297335_k0,/Users/zach.walton/Dev/shule/cs6320/datasets/beatport EDM Key Dataset/audio/297335 Matthew Dear - Deserter (Four Tet Remix).mp3,True
+test,5299867,5,75.0,90.0,B major,5299867_k0,/Users/zach.walton/Dev/shule/cs6320/datasets/beatport EDM Key Dataset/audio/5299867 L & L - Limp Dixx Dude (Original Mix).mp3,True
+test,487971,4,60.0,75.0,C major,487971_k0,/Users/zach.walton/Dev/shule/cs6320/datasets/beatport EDM Key Dataset/audio/487971 Adamatic - Sad Song (Original Mix).mp3,True
+test,5148970,2,30.0,45.0,G# major,5148970_k0,/Users/zach.walton/Dev/shule/cs6320/datasets/beatport EDM Key Dataset/audio/5148970 The Mole - Ode to Canoehead (Original Mix).mp3,True

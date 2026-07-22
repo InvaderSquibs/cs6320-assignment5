@@ -1,0 +1,260 @@
+[
+  {
+    "split": "train",
+    "track_id": 299870,
+    "chunk_idx": 7,
+    "segment_id": "299870_k0",
+    "audio_path": "/Users/zach.walton/Dev/shule/cs6320/datasets/beatport EDM Key Dataset/audio/299870 Harlem Hustler - U Can Do It (Harlem Hustler Club Mix).mp3",
+    "clip_sec": 15.0,
+    "start_sec": 105.0,
+    "end_sec": 120.0,
+    "label": {
+      "key_24": "D major",
+      "mode": "major",
+      "pitch_class": 2.0,
+      "class_index_for_pytorch": 10,
+      "all_classes": [
+        "A major",
+        "A minor",
+        "A# major",
+        "A# minor",
+        "B major",
+        "B minor",
+        "C major",
+        "C minor",
+        "C# major",
+        "C# minor",
+        "D major",
+        "D minor",
+        "D# major",
+        "D# minor",
+        "E major",
+        "E minor",
+        "F major",
+        "F minor",
+        "F# major",
+        "F# minor",
+        "G major",
+        "G minor",
+        "G# major",
+        "G# minor"
+      ]
+    },
+    "cached_waveform": {
+      "shape": [
+        2,
+        661500
+      ],
+      "dtype": "float32",
+      "description": "peak-normalized stereo PCM @ 44100 Hz",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples_per_channel": 661500,
+      "expected_samples_per_channel": 661500,
+      "min": -1.0,
+      "max": 0.986923,
+      "mean": -0.002675,
+      "left_channel_preview_first_8": [
+        0.114877,
+        0.078398,
+        -0.001265,
+        -0.073236,
+        -0.083102,
+        -0.021567,
+        0.015539,
+        0.02048
+      ],
+      "right_channel_preview_first_8": [
+        0.158232,
+        0.156818,
+        0.129038,
+        0.07655,
+        -0.025371,
+        -0.08312,
+        -0.090036,
+        -0.125214
+      ]
+    },
+    "pytorch_input": {
+      "tensor_shape": [
+        2,
+        661500
+      ],
+      "tensor_dtype": "torch.float32",
+      "note": "CNN receives shape (batch, 2, 661500) \u2014 raw waveform"
+    },
+    "sample_weight": 0.125
+  },
+  {
+    "split": "train",
+    "track_id": 605407,
+    "chunk_idx": 6,
+    "segment_id": "605407_k0",
+    "audio_path": "/Users/zach.walton/Dev/shule/cs6320/datasets/beatport EDM Key Dataset/audio/605407 Christian Sims - Tom In Da Beat (Club Mix).mp3",
+    "clip_sec": 15.0,
+    "start_sec": 90.0,
+    "end_sec": 105.0,
+    "label": {
+      "key_24": "D major",
+      "mode": "major",
+      "pitch_class": 2.0,
+      "class_index_for_pytorch": 10,
+      "all_classes": [
+        "A major",
+        "A minor",
+        "A# major",
+        "A# minor",
+        "B major",
+        "B minor",
+        "C major",
+        "C minor",
+        "C# major",
+        "C# minor",
+        "D major",
+        "D minor",
+        "D# major",
+        "D# minor",
+        "E major",
+        "E minor",
+        "F major",
+        "F minor",
+        "F# major",
+        "F# minor",
+        "G major",
+        "G minor",
+        "G# major",
+        "G# minor"
+      ]
+    },
+    "cached_waveform": {
+      "shape": [
+        2,
+        661500
+      ],
+      "dtype": "float32",
+      "description": "peak-normalized stereo PCM @ 44100 Hz",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples_per_channel": 661500,
+      "expected_samples_per_channel": 661500,
+      "min": -0.931612,
+      "max": 1.0,
+      "mean": -0.001512,
+      "left_channel_preview_first_8": [
+        0.20627,
+        0.189167,
+        0.165095,
+        0.133613,
+        0.132058,
+        0.161644,
+        0.167879,
+        0.140217
+      ],
+      "right_channel_preview_first_8": [
+        0.142424,
+        0.188844,
+        0.246366,
+        0.24414,
+        0.18933,
+        0.156342,
+        0.190009,
+        0.252427
+      ]
+    },
+    "pytorch_input": {
+      "tensor_shape": [
+        2,
+        661500
+      ],
+      "tensor_dtype": "torch.float32",
+      "note": "CNN receives shape (batch, 2, 661500) \u2014 raw waveform"
+    },
+    "sample_weight": 0.125
+  },
+  {
+    "split": "train",
+    "track_id": 19805,
+    "chunk_idx": 2,
+    "segment_id": "19805_k0",
+    "audio_path": "/Users/zach.walton/Dev/shule/cs6320/datasets/beatport EDM Key Dataset/audio/19805 Fred Baker - My Revenge (Original Mix).mp3",
+    "clip_sec": 15.0,
+    "start_sec": 30.0,
+    "end_sec": 45.0,
+    "label": {
+      "key_24": "A minor",
+      "mode": "minor",
+      "pitch_class": 9.0,
+      "class_index_for_pytorch": 1,
+      "all_classes": [
+        "A major",
+        "A minor",
+        "A# major",
+        "A# minor",
+        "B major",
+        "B minor",
+        "C major",
+        "C minor",
+        "C# major",
+        "C# minor",
+        "D major",
+        "D minor",
+        "D# major",
+        "D# minor",
+        "E major",
+        "E minor",
+        "F major",
+        "F minor",
+        "F# major",
+        "F# minor",
+        "G major",
+        "G minor",
+        "G# major",
+        "G# minor"
+      ]
+    },
+    "cached_waveform": {
+      "shape": [
+        2,
+        661500
+      ],
+      "dtype": "float32",
+      "description": "peak-normalized stereo PCM @ 44100 Hz",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples_per_channel": 661500,
+      "expected_samples_per_channel": 661500,
+      "min": -0.899868,
+      "max": 1.0,
+      "mean": -0.000315,
+      "left_channel_preview_first_8": [
+        0.315188,
+        0.195653,
+        0.187213,
+        0.310452,
+        0.278089,
+        0.197348,
+        0.217229,
+        0.23615
+      ],
+      "right_channel_preview_first_8": [
+        0.266257,
+        0.181307,
+        0.14403,
+        0.247505,
+        0.240639,
+        0.168928,
+        0.171499,
+        0.231844
+      ]
+    },
+    "pytorch_input": {
+      "tensor_shape": [
+        2,
+        661500
+      ],
+      "tensor_dtype": "torch.float32",
+      "note": "CNN receives shape (batch, 2, 661500) \u2014 raw waveform"
+    },
+    "sample_weight": 0.125
+  }
+]

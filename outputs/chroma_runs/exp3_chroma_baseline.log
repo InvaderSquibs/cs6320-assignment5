@@ -1,0 +1,150 @@
+Run 'exp3_chroma_baseline' starting — loading data...
+Training log file: /Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/chroma_runs/exp3_chroma_baseline.log
+Loaded 8969 chunks with cached chroma from /Users/zach.walton/Dev/shule/cs6320/beatport/datasets/clip_15s/features/key_chroma
+=== Device detection ===
+  CUDA available: False
+  MPS (Apple Metal GPU) available: True
+  Selected device: mps
+Device=mps  batch_size=64  hidden_dim=64  train=6285 (99 batches/epoch)  val=1350 (22 batches)  test=1334  classes=24  input_dim=24  batch_log_interval=0  eval_log_interval=0
+Training for up to 30 epochs (patience=8)
+Epoch 1/30 — training (99 batches)
+Epoch 1/30 — train done  mean_loss=3.1119  elapsed=13.2s
+Epoch 1/30 — train  loss=2.9975  acc=0.244  macro_f1=0.177  elapsed=13.1s
+Epoch 1/30 — evaluating val (22 batches)
+Epoch 1/30 — val  loss=3.0003  acc=0.253  macro_f1=0.168  elapsed=12.7s
+=== Epoch 1/30 summary ===  train_loss=2.9975  val_loss=3.0003  train_acc=0.244  val_acc=0.253  val_f1=0.168  best_val=yes  no_improve=0/8
+Epoch 2/30 — training (99 batches)
+Epoch 2/30 — train done  mean_loss=2.8386  elapsed=13.1s
+Epoch 2/30 — train  loss=2.6491  acc=0.345  macro_f1=0.263  elapsed=13.1s
+Epoch 2/30 — evaluating val (22 batches)
+Epoch 2/30 — val  loss=2.6845  acc=0.367  macro_f1=0.262  elapsed=12.7s
+=== Epoch 2/30 summary ===  train_loss=2.6491  val_loss=2.6845  train_acc=0.345  val_acc=0.367  val_f1=0.262  best_val=yes  no_improve=0/8
+Epoch 3/30 — training (99 batches)
+Epoch 3/30 — train done  mean_loss=2.4872  elapsed=13.1s
+Epoch 3/30 — train  loss=2.3278  acc=0.389  macro_f1=0.336  elapsed=13.1s
+Epoch 3/30 — evaluating val (22 batches)
+Epoch 3/30 — val  loss=2.3938  acc=0.356  macro_f1=0.285  elapsed=12.7s
+=== Epoch 3/30 summary ===  train_loss=2.3278  val_loss=2.3938  train_acc=0.389  val_acc=0.356  val_f1=0.285  best_val=yes  no_improve=0/8
+Epoch 4/30 — training (99 batches)
+Epoch 4/30 — train done  mean_loss=2.2293  elapsed=13.1s
+Epoch 4/30 — train  loss=2.1306  acc=0.394  macro_f1=0.346  elapsed=13.1s
+Epoch 4/30 — evaluating val (22 batches)
+Epoch 4/30 — val  loss=2.2514  acc=0.376  macro_f1=0.322  elapsed=12.7s
+=== Epoch 4/30 summary ===  train_loss=2.1306  val_loss=2.2514  train_acc=0.394  val_acc=0.376  val_f1=0.322  best_val=yes  no_improve=0/8
+Epoch 5/30 — training (99 batches)
+Epoch 5/30 — train done  mean_loss=2.0776  elapsed=13.1s
+Epoch 5/30 — train  loss=2.0249  acc=0.393  macro_f1=0.364  elapsed=13.1s
+Epoch 5/30 — evaluating val (22 batches)
+Epoch 5/30 — val  loss=2.1474  acc=0.368  macro_f1=0.333  elapsed=12.7s
+=== Epoch 5/30 summary ===  train_loss=2.0249  val_loss=2.1474  train_acc=0.393  val_acc=0.368  val_f1=0.333  best_val=yes  no_improve=0/8
+Epoch 6/30 — training (99 batches)
+Epoch 6/30 — train done  mean_loss=1.9906  elapsed=13.1s
+Epoch 6/30 — train  loss=1.9449  acc=0.416  macro_f1=0.391  elapsed=13.1s
+Epoch 6/30 — evaluating val (22 batches)
+Epoch 6/30 — val  loss=2.0959  acc=0.408  macro_f1=0.363  elapsed=12.7s
+=== Epoch 6/30 summary ===  train_loss=1.9449  val_loss=2.0959  train_acc=0.416  val_acc=0.408  val_f1=0.363  best_val=yes  no_improve=0/8
+Epoch 7/30 — training (99 batches)
+Epoch 7/30 — train done  mean_loss=1.9181  elapsed=13.1s
+Epoch 7/30 — train  loss=1.9077  acc=0.422  macro_f1=0.390  elapsed=13.1s
+Epoch 7/30 — evaluating val (22 batches)
+Epoch 7/30 — val  loss=2.0560  acc=0.418  macro_f1=0.346  elapsed=13.0s
+=== Epoch 7/30 summary ===  train_loss=1.9077  val_loss=2.0560  train_acc=0.422  val_acc=0.418  val_f1=0.346  best_val=yes  no_improve=0/8
+Epoch 8/30 — training (99 batches)
+Epoch 8/30 — train done  mean_loss=1.8855  elapsed=13.1s
+Epoch 8/30 — train  loss=1.8488  acc=0.404  macro_f1=0.393  elapsed=13.1s
+Epoch 8/30 — evaluating val (22 batches)
+Epoch 8/30 — val  loss=2.0111  acc=0.382  macro_f1=0.366  elapsed=12.7s
+=== Epoch 8/30 summary ===  train_loss=1.8488  val_loss=2.0111  train_acc=0.404  val_acc=0.382  val_f1=0.366  best_val=yes  no_improve=0/8
+Epoch 9/30 — training (99 batches)
+Epoch 9/30 — train done  mean_loss=1.8512  elapsed=13.1s
+Epoch 9/30 — train  loss=1.8436  acc=0.436  macro_f1=0.409  elapsed=13.1s
+Epoch 9/30 — evaluating val (22 batches)
+Epoch 9/30 — val  loss=2.0257  acc=0.425  macro_f1=0.370  elapsed=12.7s
+=== Epoch 9/30 summary ===  train_loss=1.8436  val_loss=2.0257  train_acc=0.436  val_acc=0.425  val_f1=0.370  best_val=no  no_improve=1/8
+Epoch 10/30 — training (99 batches)
+Epoch 10/30 — train done  mean_loss=1.8332  elapsed=13.2s
+Epoch 10/30 — train  loss=1.8257  acc=0.407  macro_f1=0.391  elapsed=13.2s
+Epoch 10/30 — evaluating val (22 batches)
+Epoch 10/30 — val  loss=2.0508  acc=0.396  macro_f1=0.366  elapsed=12.7s
+=== Epoch 10/30 summary ===  train_loss=1.8257  val_loss=2.0508  train_acc=0.407  val_acc=0.396  val_f1=0.366  best_val=no  no_improve=2/8
+Epoch 11/30 — training (99 batches)
+Epoch 11/30 — train done  mean_loss=1.8081  elapsed=13.1s
+Epoch 11/30 — train  loss=1.8034  acc=0.422  macro_f1=0.396  elapsed=13.1s
+Epoch 11/30 — evaluating val (22 batches)
+Epoch 11/30 — val  loss=2.0395  acc=0.399  macro_f1=0.355  elapsed=12.7s
+=== Epoch 11/30 summary ===  train_loss=1.8034  val_loss=2.0395  train_acc=0.422  val_acc=0.399  val_f1=0.355  best_val=no  no_improve=3/8
+Epoch 12/30 — training (99 batches)
+Epoch 12/30 — train done  mean_loss=1.7959  elapsed=13.1s
+Epoch 12/30 — train  loss=1.7783  acc=0.439  macro_f1=0.422  elapsed=13.2s
+Epoch 12/30 — evaluating val (22 batches)
+Epoch 12/30 — val  loss=1.9894  acc=0.429  macro_f1=0.388  elapsed=12.8s
+=== Epoch 12/30 summary ===  train_loss=1.7783  val_loss=1.9894  train_acc=0.439  val_acc=0.429  val_f1=0.388  best_val=yes  no_improve=0/8
+Epoch 13/30 — training (99 batches)
+Epoch 13/30 — train done  mean_loss=1.7807  elapsed=13.1s
+Epoch 13/30 — train  loss=1.7616  acc=0.445  macro_f1=0.424  elapsed=13.1s
+Epoch 13/30 — evaluating val (22 batches)
+Epoch 13/30 — val  loss=2.0222  acc=0.420  macro_f1=0.373  elapsed=12.8s
+=== Epoch 13/30 summary ===  train_loss=1.7616  val_loss=2.0222  train_acc=0.445  val_acc=0.420  val_f1=0.373  best_val=no  no_improve=1/8
+Epoch 14/30 — training (99 batches)
+Epoch 14/30 — train done  mean_loss=1.7713  elapsed=13.1s
+Epoch 14/30 — train  loss=1.7558  acc=0.439  macro_f1=0.419  elapsed=13.1s
+Epoch 14/30 — evaluating val (22 batches)
+Epoch 14/30 — val  loss=1.9849  acc=0.416  macro_f1=0.385  elapsed=12.7s
+=== Epoch 14/30 summary ===  train_loss=1.7558  val_loss=1.9849  train_acc=0.439  val_acc=0.416  val_f1=0.385  best_val=yes  no_improve=0/8
+Epoch 15/30 — training (99 batches)
+Epoch 15/30 — train done  mean_loss=1.7588  elapsed=13.1s
+Epoch 15/30 — train  loss=1.7807  acc=0.444  macro_f1=0.422  elapsed=13.1s
+Epoch 15/30 — evaluating val (22 batches)
+Epoch 15/30 — val  loss=2.0719  acc=0.413  macro_f1=0.363  elapsed=12.7s
+=== Epoch 15/30 summary ===  train_loss=1.7807  val_loss=2.0719  train_acc=0.444  val_acc=0.413  val_f1=0.363  best_val=no  no_improve=1/8
+Epoch 16/30 — training (99 batches)
+Epoch 16/30 — train done  mean_loss=1.7553  elapsed=13.1s
+Epoch 16/30 — train  loss=1.7349  acc=0.430  macro_f1=0.417  elapsed=13.1s
+Epoch 16/30 — evaluating val (22 batches)
+Epoch 16/30 — val  loss=1.9984  acc=0.384  macro_f1=0.348  elapsed=12.7s
+=== Epoch 16/30 summary ===  train_loss=1.7349  val_loss=1.9984  train_acc=0.430  val_acc=0.384  val_f1=0.348  best_val=no  no_improve=2/8
+Epoch 17/30 — training (99 batches)
+Epoch 17/30 — train done  mean_loss=1.7436  elapsed=13.1s
+Epoch 17/30 — train  loss=1.7235  acc=0.435  macro_f1=0.422  elapsed=13.1s
+Epoch 17/30 — evaluating val (22 batches)
+Epoch 17/30 — val  loss=2.0162  acc=0.401  macro_f1=0.362  elapsed=12.7s
+=== Epoch 17/30 summary ===  train_loss=1.7235  val_loss=2.0162  train_acc=0.435  val_acc=0.401  val_f1=0.362  best_val=no  no_improve=3/8
+Epoch 18/30 — training (99 batches)
+Epoch 18/30 — train done  mean_loss=1.7275  elapsed=13.2s
+Epoch 18/30 — train  loss=1.7113  acc=0.440  macro_f1=0.425  elapsed=13.2s
+Epoch 18/30 — evaluating val (22 batches)
+Epoch 18/30 — val  loss=1.9855  acc=0.413  macro_f1=0.379  elapsed=12.7s
+=== Epoch 18/30 summary ===  train_loss=1.7113  val_loss=1.9855  train_acc=0.440  val_acc=0.413  val_f1=0.379  best_val=no  no_improve=4/8
+Epoch 19/30 — training (99 batches)
+Epoch 19/30 — train done  mean_loss=1.7277  elapsed=13.1s
+Epoch 19/30 — train  loss=1.7024  acc=0.437  macro_f1=0.425  elapsed=13.1s
+Epoch 19/30 — evaluating val (22 batches)
+Epoch 19/30 — val  loss=2.0193  acc=0.392  macro_f1=0.360  elapsed=12.7s
+=== Epoch 19/30 summary ===  train_loss=1.7024  val_loss=2.0193  train_acc=0.437  val_acc=0.392  val_f1=0.360  best_val=no  no_improve=5/8
+Epoch 20/30 — training (99 batches)
+Epoch 20/30 — train done  mean_loss=1.7157  elapsed=13.1s
+Epoch 20/30 — train  loss=1.6887  acc=0.448  macro_f1=0.436  elapsed=13.1s
+Epoch 20/30 — evaluating val (22 batches)
+Epoch 20/30 — val  loss=2.0109  acc=0.396  macro_f1=0.359  elapsed=12.8s
+=== Epoch 20/30 summary ===  train_loss=1.6887  val_loss=2.0109  train_acc=0.448  val_acc=0.396  val_f1=0.359  best_val=no  no_improve=6/8
+Epoch 21/30 — training (99 batches)
+Epoch 21/30 — train done  mean_loss=1.7051  elapsed=13.2s
+Epoch 21/30 — train  loss=1.6902  acc=0.456  macro_f1=0.439  elapsed=13.1s
+Epoch 21/30 — evaluating val (22 batches)
+Epoch 21/30 — val  loss=2.0286  acc=0.398  macro_f1=0.362  elapsed=12.7s
+=== Epoch 21/30 summary ===  train_loss=1.6902  val_loss=2.0286  train_acc=0.456  val_acc=0.398  val_f1=0.362  best_val=no  no_improve=7/8
+Epoch 22/30 — training (99 batches)
+Epoch 22/30 — train done  mean_loss=1.6976  elapsed=13.1s
+Epoch 22/30 — train  loss=1.6900  acc=0.442  macro_f1=0.427  elapsed=13.1s
+Epoch 22/30 — evaluating val (22 batches)
+Epoch 22/30 — val  loss=2.0336  acc=0.406  macro_f1=0.371  elapsed=12.7s
+=== Epoch 22/30 summary ===  train_loss=1.6900  val_loss=2.0336  train_acc=0.442  val_acc=0.406  val_f1=0.371  best_val=no  no_improve=8/8
+Early stopping at epoch 22
+Wrote /Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/chroma_runs/exp3_chroma_baseline_checkpoint.pt
+Evaluating test split with best val checkpoint...
+Epoch 30/30 — evaluating test (21 batches)
+Epoch 30/30 — test  loss=1.9867  acc=0.367  macro_f1=0.329  elapsed=12.6s
+Wrote /Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/chroma_runs/exp3_chroma_baseline_history.csv
+Wrote /Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/chroma_runs/exp3_chroma_baseline_metadata.json
+Wrote /Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/chroma_runs/exp3_chroma_baseline.log
+Done in 870.1s — test acc=0.367 macro_f1=0.329 loss=1.987

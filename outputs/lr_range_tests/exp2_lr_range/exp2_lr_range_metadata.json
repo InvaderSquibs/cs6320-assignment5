@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-06-28T15:36:15.904716+00:00",
+  "command": "../assignment_5/run_lr_range_test.py --run-name exp2_lr_range",
+  "part04_reference": "assignment_4/part040-000-training-neural-networks-debugging.pdf p.21",
+  "start_lr": 1e-06,
+  "end_lr": 0.1,
+  "n_steps": 393,
+  "device": "mps",
+  "suggestion": {
+    "suggested_lr": 0.002108529064593078,
+    "min_loss_lr": 0.02108529064593078,
+    "min_loss": 2.8876407146453857,
+    "steepest_drop_lr": 0.02108529064593078,
+    "reason": "Use range test as candidate generator (Part 04 p.19). Suggested starting point \u2248 2.11e-03 (order of magnitude below steepest-drop region ~2.11e-02)."
+  },
+  "csv": "/Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/lr_range_tests/exp2_lr_range/exp2_lr_range_lr_range.csv",
+  "plot": "/Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/lr_range_tests/exp2_lr_range/exp2_lr_range_lr_range.png"
+}

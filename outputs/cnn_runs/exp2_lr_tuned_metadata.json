@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-06-28T17:10:21.560276+00:00",
+  "command": "../assignment_5/train_key_cnn.py --run-name exp2_lr_tuned --learning-rate 0.002 --batch-log-interval 20 --epochs 30",
+  "run_name": "exp2_lr_tuned",
+  "clip_sec": 15,
+  "epochs_requested": 30,
+  "epochs_ran": 10,
+  "batch_size": 16,
+  "batch_log_interval": 20,
+  "eval_log_interval": 0,
+  "dropout": 0.0,
+  "learning_rate": 0.002,
+  "weight_decay": 0.0,
+  "patience": 8,
+  "seed": 42,
+  "device": "mps",
+  "device_detection": {
+    "cuda_available": false,
+    "mps_available": true
+  },
+  "device_preference": "auto",
+  "input": {
+    "sample_rate": 44100,
+    "channels": 2,
+    "samples_per_channel": 661500,
+    "tensor_shape": [
+      2,
+      661500
+    ]
+  },
+  "n_train": 6285,
+  "n_val": 1350,
+  "n_test": 1334,
+  "n_classes": 24,
+  "best_val_loss": 3.183240410860847,
+  "test_loss": 3.2099966690653847,
+  "test_accuracy": 0.038980509745127435,
+  "test_macro_f1": 0.015285985910993359,
+  "history_csv": "/Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/cnn_runs/exp2_lr_tuned_history.csv",
+  "training_log": "/Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/cnn_runs/exp2_lr_tuned.log",
+  "total_elapsed_sec": 5464.2
+}

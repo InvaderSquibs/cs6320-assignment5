@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-06-28T19:41:44.031984+00:00",
+  "command": "../assignment_5/train_key_chroma.py --run-name exp3_chroma_baseline --learning-rate 0.00275 --epochs 30 --quiet",
+  "run_name": "exp3_chroma_baseline",
+  "clip_sec": 15,
+  "epochs_requested": 30,
+  "epochs_ran": 22,
+  "batch_size": 64,
+  "hidden_dim": 64,
+  "batch_log_interval": 0,
+  "eval_log_interval": 0,
+  "dropout": 0.0,
+  "learning_rate": 0.00275,
+  "weight_decay": 0.0,
+  "patience": 8,
+  "seed": 42,
+  "device": "mps",
+  "device_detection": {
+    "cuda_available": false,
+    "mps_available": true
+  },
+  "device_preference": "auto",
+  "input": {
+    "feature_type": "chroma_cqt_mean_std",
+    "input_dim": 24,
+    "description": "12 pitch-class means + 12 stds from librosa chroma_cqt"
+  },
+  "n_train": 6285,
+  "n_val": 1350,
+  "n_test": 1334,
+  "n_classes": 24,
+  "best_val_loss": 1.984892189502716,
+  "test_loss": 1.9867287420091175,
+  "test_accuracy": 0.36656671664167917,
+  "test_macro_f1": 0.3292556087744869,
+  "history_csv": "/Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/chroma_runs/exp3_chroma_baseline_history.csv",
+  "training_log": "/Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/chroma_runs/exp3_chroma_baseline.log",
+  "checkpoint_pt": "/Users/zach.walton/Dev/shule/cs6320/assignment_5/outputs/chroma_runs/exp3_chroma_baseline_checkpoint.pt",
+  "total_elapsed_sec": 870.1
+}
