@@ -38,6 +38,7 @@ rsync -a \
   --exclude 'dist/' \
   --exclude 'outputs/' \
   --exclude 'chpc_evidence/' \
+  --exclude 'figures/' \
   --exclude 'ASSIGNMENT_5_WRITEUP.md' \
   --exclude 'SUBMISSION.md' \
   --exclude '*.pt' \
