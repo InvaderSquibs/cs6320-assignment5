@@ -24,6 +24,10 @@ mkdir -p \
 # --- Writeup ---
 cp "${ROOT}/ASSIGNMENT_5_WRITEUP.md" "${STAGING}/writeup/ASSIGNMENT_5_WRITEUP.md"
 cp "${ROOT}/SUBMISSION.md" "${STAGING}/README_SUBMISSION.txt"
+if [[ -d "${ROOT}/figures" ]]; then
+  mkdir -p "${STAGING}/writeup/figures"
+  rsync -a "${ROOT}/figures/" "${STAGING}/writeup/figures/"
+fi
 
 # --- Runnable code (no outputs, no weights, no student-example noise optional keep) ---
 rsync -a \

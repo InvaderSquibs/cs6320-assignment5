@@ -56,6 +56,8 @@ Artifacts live under `assignment_5/outputs/`. Commands and run names are recorde
 
 **Leakage checks:** No track in multiple splits; chunk split consistent with song split. All 24 keys, 2 modes, and 12 pitch classes appear in val and test (no unseen labels vs train).
 
+![Mode counts by split (split audit)](figures/split_mode_counts_by_split.png)
+
 **Why this split is appropriate:** Key labels are song/segment properties; evaluating on chunks from held-out songs approximates “new track at prediction time.” Segment-level labeling further limits leakage when a preview changes key mid-track.
 
 ### Aggregate metrics (test set, 15s chunks)
@@ -74,13 +76,21 @@ Chroma MLP matches the classical chroma baseline band (~35–40%), which support
 
 **Waveform CNN (Exp 1–2):** Train and val loss stay near **~3.0–3.2** (≈ random 24-class cross-entropy ~3.18). Val accuracy jitters between ~4–8% with no sustained downward trend. Diagnosis: **underfitting / wrong input scale** — the model never extracts usable pitch-class structure from raw PCM.
 
-- Learning curves: `outputs/cnn_runs/plots/loss_learning_curve.png`, `validation_metric_learning_curve.png`
-- LR range test (Exp 2): `outputs/lr_range_tests/exp2_lr_range/exp2_lr_range_lr_range.png` — brief loss dip at high LR, but full training at `2e-3` did not fix learning.
+![Waveform CNN train/val loss (Exp 1–2)](figures/exp1_2_waveform_loss_learning_curve.png)
+
+![Waveform CNN val accuracy / macro F1 over epochs](figures/exp1_2_waveform_val_metrics.png)
+
+![Exp 2 LR range test (loss vs LR)](figures/exp2_lr_range.png)
+
+Brief loss dip at high LR in the range test, but full training at `2e-3` did not fix learning.
 
 **Chroma MLP (Exp 3):** Clear learning in the first ~8 epochs (loss 3.0 → ~2.0; val accuracy ~25% → ~42%). After epoch ~8–14, **val loss plateaus** (~1.98–2.05) while train loss continues to fall (~1.69 by epoch 22) — mild **overfitting** with early stopping at epoch 22 (best val checkpoint ≈ epoch 14, val loss 1.985).
 
-- Learning curves: `outputs/chroma_runs/plots/loss_learning_curve.png`, `validation_metric_learning_curve.png`
-- LR range test: `outputs/lr_range_tests/exp3_chroma_lr_range/exp3_chroma_lr_range_lr_range.png`
+![Chroma MLP train/val loss over epochs](figures/exp3_chroma_loss_learning_curve.png)
+
+![Chroma MLP val macro F1 and accuracy over epochs](figures/exp3_chroma_val_f1_accuracy.png)
+
+![Exp 3 chroma LR range test](figures/exp3_chroma_lr_range.png)
 
 **Train vs val gap (chroma MLP):** Test accuracy 36.7% vs train eval accuracy ~44% at late epochs — plausible generalization, not severe overfit, but not high enough for deployment.
 
@@ -96,18 +106,29 @@ Chroma MLP matches the classical chroma baseline band (~35–40%), which support
 
 ### Error and slice analysis (chroma MLP, test set)
 
-Artifacts: `outputs/error_analysis/exp3_chroma_baseline/`
+Artifacts: `outputs/error_analysis/exp3_chroma_baseline/` (+ `figures/exp4_*.png` below)
 
 | Slice | Finding |
 | --- | --- |
-| **Mode** | Minor chunks slightly higher accuracy than major (38.2% vs 33.1%) — see `plots/slice_by_mode.png` |
-| **Chunk position in 120s preview** | Mid preview (45–90s) best (~38.3% acc); early and late slightly lower — see `plots/slice_by_chunk_position.png` |
-| **Per-class** | Spread in F1 across 24 keys; some keys near zero F1 — `plots/per_class_f1.png`, `classification_per_class_report.csv` |
-| **Confusion** | Full 24×24 matrix — `plots/confusion_matrix_heatmap.png` — shows key confusions (relative keys / circle-of-fifths neighbors) |
+| **Mode** | Minor chunks slightly higher accuracy than major (38.2% vs 33.1%) |
+| **Chunk position in 120s preview** | Mid preview (45–90s) best (~38.3% acc); early and late slightly lower |
+| **Per-class** | Spread in F1 across 24 keys; some keys near zero F1 |
+| **Confusion** | Full 24×24 matrix shows key confusions (relative keys / circle-of-fifths neighbors) |
+
+![Confusion matrix (row-normalized, test)](figures/exp4_confusion_matrix.png)
+
+![Per-class F1 on test set](figures/exp4_per_class_f1.png)
+
+![Accuracy by mode (major vs minor)](figures/exp4_slice_by_mode.png)
+
+![Accuracy by chunk position in preview](figures/exp4_slice_by_chunk_position.png)
 
 ### Calibration and confidence
 
-- **Reliability diagram:** `outputs/error_analysis/exp3_chroma_baseline/plots/reliability_diagram.png`
+![Reliability diagram (chroma MLP)](figures/exp4_reliability_diagram.png)
+
+![Confidence when correct vs incorrect](figures/exp4_confidence_distribution.png)
+
 - **Confidence when correct vs wrong:** Mean confidence ~0.44 when correct vs ~0.33 when incorrect (`confidence_summary.csv`).
 - **High-confidence errors (≥0.9):** None on test set; max wrong confidence ~0.85 — model is **not** severely overconfident on mistakes, but overall confidence is modest.
 - **Interpretation:** Softmax probabilities are usable for *ranking* uncertain cases, not for strong “I am 95% sure” claims.
@@ -193,6 +214,7 @@ Other staged options after clip-length comparison:
 
 | Category | Path |
 | --- | --- |
+| Writeup figures (embedded above) | `figures/` |
 | Split audit | `outputs/split_audit/` |
 | Waveform CNN runs | `outputs/cnn_runs/baseline_cnn_*`, `exp2_lr_tuned_*`, `plots/` |
 | LR range tests | `outputs/lr_range_tests/exp2_lr_range/`, `exp3_chroma_lr_range/` |
